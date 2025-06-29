@@ -13,5 +13,6 @@ func RunMigrations(db *gorm.DB) error {
 		&entities.User{},
 		&entities.Event{},
 		&entities.Ticket{},
+		&entities.Activity{},
 	)
 }

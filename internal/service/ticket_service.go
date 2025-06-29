@@ -65,6 +65,8 @@ func (s *TicketServiceImpl) PurchaseTicket(ctx context.Context, ticket *entities
 	}
 	ticket.UpdatedAt = time.Now()
 
+	ticket.Status = entities.TicketStatusActive
+
 	appErr := s.ticketRepo.Create(ctx, ticket)
 	if appErr != nil {
 		return nil, appErr

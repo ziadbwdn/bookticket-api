@@ -63,6 +63,7 @@ func (h *EventHandler) CreateEvent(c *gin.Context) {
 	event := &entities.Event{
 		Name:        req.Name,
 		Description: req.Description,
+		Category:    req.Category,
 		Venue:       req.Venue,
 		StartDate:   req.StartDate,
 		EndDate:     req.EndDate,
@@ -71,6 +72,7 @@ func (h *EventHandler) CreateEvent(c *gin.Context) {
 		Price: PriceGd,
 		// FIX: The entity field `Status` has type `entities.EventStatus`, not `string`. Cast it.
 		Status: entities.EventStatus(req.Status),
+		CreatedBy:      userID,
 	}
 
 	createdEvent, appErr := h.eventService.CreateEvent(c.Request.Context(), event, logCtx)

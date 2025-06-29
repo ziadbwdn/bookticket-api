@@ -74,7 +74,7 @@ type UpdateTicketStatusRequest struct {
 	EventID        	*string           	`json:"event_id" binding:"required"`
 	UserID 			*string           	`json:"user_id" binding:"required"`
 	TicketCode    	*string           	`json:"ticket_code" binding:"required"`
-	Status    		*int              	`json:"status" binding:"omitempty"`
+	Status    		*string              	`json:"status" binding:"omitempty"`
 	PurchaseDate	*string 			`json:"purchase_date" binding:"required"`
 }
 
