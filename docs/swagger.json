@@ -1,0 +1,99 @@
+{
+    "schemes": [
+        "http"
+    ],
+    "swagger": "2.0",
+    "info": {
+        "description": "This is the BookTicket Data Management API documentation.",
+        "title": "BookTicket API",
+        "termsOfService": "http://example.com/terms/",
+        "contact": {
+            "name": "API Support",
+            "url": "http://www.example.com/support",
+            "email": "support@example.com"
+        },
+        "version": "1.0"
+    },
+    "host": "localhost:8080",
+    "basePath": "/api",
+    "paths": {
+        "/activities/alerts": {
+            "get": {
+                "responses": {}
+            }
+        },
+        "/activities/summary/{userID}": {
+            "get": {
+                "responses": {}
+            }
+        },
+        "/api/events": {
+            "post": {
+                "responses": {}
+            }
+        },
+        "/api/events/": {
+            "get": {
+                "responses": {}
+            }
+        },
+        "/api/events/{id}": {
+            "get": {
+                "responses": {}
+            },
+            "delete": {
+                "responses": {}
+            },
+            "patch": {
+                "responses": {}
+            }
+        },
+        "/api/tickets": {
+            "get": {
+                "responses": {}
+            },
+            "post": {
+                "responses": {}
+            }
+        },
+        "/api/tickets/{id}": {
+            "get": {
+                "responses": {}
+            },
+            "delete": {
+                "responses": {}
+            },
+            "patch": {
+                "responses": {}
+            }
+        },
+        "/api/users/{id}/tickets": {
+            "get": {
+                "responses": {}
+            }
+        },
+        "/auth/login": {
+            "post": {
+                "responses": {}
+            }
+        },
+        "/auth/logout": {
+            "post": {
+                "responses": {}
+            }
+        },
+        "/auth/register": {
+            "post": {
+                "responses": {}
+            }
+        }
+    },
+    "securityDefinitions": {
+        "BearerAuth": {
+            "description": "Type \"Bearer\" followed by a space and JWT token.",
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    }
+}
