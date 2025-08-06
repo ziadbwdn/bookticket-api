@@ -1,0 +1,64 @@
+basePath: /api
+host: localhost:8080
+info:
+  contact:
+    email: support@example.com
+    name: API Support
+    url: http://www.example.com/support
+  description: This is the BookTicket Data Management API documentation.
+  termsOfService: http://example.com/terms/
+  title: BookTicket API
+  version: "1.0"
+paths:
+  /activities/alerts:
+    get:
+      responses: {}
+  /activities/summary/{userID}:
+    get:
+      responses: {}
+  /api/events:
+    post:
+      responses: {}
+  /api/events/:
+    get:
+      responses: {}
+  /api/events/{id}:
+    delete:
+      responses: {}
+    get:
+      responses: {}
+    patch:
+      responses: {}
+  /api/tickets:
+    get:
+      responses: {}
+    post:
+      responses: {}
+  /api/tickets/{id}:
+    delete:
+      responses: {}
+    get:
+      responses: {}
+    patch:
+      responses: {}
+  /api/users/{id}/tickets:
+    get:
+      responses: {}
+  /auth/login:
+    post:
+      responses: {}
+  /auth/logout:
+    post:
+      responses: {}
+  /auth/register:
+    post:
+      responses: {}
+schemes:
+- http
+securityDefinitions:
+  BearerAuth:
+    description: Type "Bearer" followed by a space and JWT token.
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"
